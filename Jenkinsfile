@@ -5,7 +5,7 @@ pipeline{
   stages{
     stage('docker1'){
       steps{
-        sh  "echo "hello" >> hello.html" 
+        sh  
       }
     }
   }
