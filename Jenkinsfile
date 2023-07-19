@@ -12,8 +12,8 @@ pipeline{
         sh "git clone https://github.com/Aniruddha-22-git/docker1.git /mnt/23q1"
         sh "cd /mnt/23q1"
         sh "git checkout 23q1"*/
-        sh "docker run -itdp 80:80 -v /mnt/23q1:/usr/local/apache2/htdocs --name ani httpd"
-        sh "docker exec -it 23q1 chmod -R 777 /usr/local/apache2/htdocs"
+        sh "docker run -itdp 90:80 -v /mnt/23q1:/usr/local/apache2/htdocs --name annya httpd"
+        sh "docker exec -it annya chmod -R 777 /usr/local/apache2/htdocs"
       }
     }
   }
