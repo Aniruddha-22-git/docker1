@@ -5,7 +5,7 @@ pipeline{
   stages{
     stage('stage1'){
       steps{
-        sh "yum install git -y "
+        //sh "yum install git -y "
         sh "yum install docker -y"
         sh "systemctl start docker"
         sh "systemctl enable docker"
