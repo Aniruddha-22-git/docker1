@@ -5,6 +5,9 @@ pipeline{
   stages{
     stage('stage1'){
       steps{
+        sh "yum install docker -y "
+        sh "docker systemctl start docker"
+        sh "docker systemctl enable docker"
       sh "git clone https://github.com/Aniruddha-22-git/docker1.git -b 23q1 /mnt/23q1"
         sh "docker run -itdp 80:80 --name 23q1 httpd"
         sh "docker cp /mnt/23q1/index.html 23q1:/usr/local/apache2/htdocs"
